@@ -912,8 +912,9 @@ async def maxgieBot(op):
                                 purl = msg.contentMetadata["postEndUrl"].split('userMid=')[1].split('&postId=')
                                 if purl[1] not in wait['postId']:
                                     maxgie.likePost(purl[0], purl[1], random.choice([1001,1002,1003,1004,1005]))
+                                    kb.likePost(purl[0], purl[1], random.choice([1001,1002,1003,1004,1005]))
                                 if settings["com"] == True:
-                                    maxgie.createComment(purl[0], purl[1], settings["commet"])
+                                    maxgie.createComment(purl[0], purl[1], settings["auto like by alish joker"])
                                     wait['postId'].append(purl[1])
                                 else:
                                     pass
@@ -922,8 +923,10 @@ async def maxgieBot(op):
                                     purl = msg.contentMetadata['postEndUrl'].split('homeId=')[1].split('&postId=')
                                     if purl[1] not in wait['postId']:
                                         maxgie.likePost(msg._from, purl[1], random.choice([1001,1002,1003,1004,1005]))
+                                        kb.likePost(msg._from, purl[1], random.choice([1001,1002,1003,1004,1005]))
+                                      #  maxgie.likePost(purl[0], purl[1], random.choice([1001,1002,1003,1004,1005]))
                                     if settings["com"] == True:
-                                        maxgie.createComment(msg._from, purl[1], settings["commet"])
+                                        maxgie.createComment(msg._from, purl[1], settings["auto like by alish joker"])
                                         wait['postId'].append(purl[1])
                                     else:pass
 #=====================================================================
