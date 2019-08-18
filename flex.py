@@ -34,9 +34,9 @@ maxgie = LINE('')
 maxgie.log("Auth Token : " + str(maxgie.authToken))
 maxgie.log("Timeline Token : " + str(maxgie.tl.channelAccessToken))
 
-kb = LINE('')
-kb.log("Auth Token : " + str(kb.authToken))
-kb.log("Timeline Token : " + str(maxgie.tl.channelAccessToken))
+#kb = LINE('')
+#kb.log("Auth Token : " + str(kb.authToken))
+#kb.log("Timeline Token : " + str(maxgie.tl.channelAccessToken))
 
 
 waitOpen = codecs.open("Max2.json","r","utf-8")
